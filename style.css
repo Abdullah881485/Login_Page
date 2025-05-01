@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 950px;
+    background-image: url(log.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sign-in{
+    width: 500px;
+    border-radius: 30px;
+    padding: 30px 40px;
+    margin-bottom: 100px;
+    background-color: rgb(0, 0, 0, .2);
+    
+}
+.sign-in h1{
+    color: rgb(0, 0, 0, .6);
+    font-size: 50px;
+    text-align: center;
+}
+.sign-in .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    transition: 0.25s linear;
+}
+.sign-in .input-box:hover{
+    scale: 1.1;
+    
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(49, 48, 48, 0.2);
+    border-radius: 40px;
+    padding-left: 20px;
+}
+.input-box input::placeholder{
+    color: white;
+    opacity: 50%;
+    
+
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+.sign-in .remfor{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 15px;
+    font-size: 15px;
+    transition: 0.1s ease;
+}
+.remfor label input{
+    accent-color: white;
+    
+}
+.remfor label input:hover{
+    scale: 1.2;
+}
+.remfor a{
+    color: white;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+.remfor a:hover{
+    color: blue;
+    text-decoration: underline;
+    scale: 1.1;
+}
+.sign-in button{
+    
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    margin-left: 0px;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; ;
+    cursor: pointer;
+    
+    
+}
+.sign-in button:hover{
+    scale: 1.1;
+    background-color: gray;
+    color: white;
+}
+.sign-in .register{
+    font-size: 15px;
+    text-align: center;
+    margin: 25px 0;
+
+}
+.register p a{
+    color: white;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+.register p a:hover{
+    color: blue;
+    text-decoration: underline;
+    scale: 1.1;
+}
+
+@media(max-width:500px){
+    .sign-in{
+        flex-direction: column;
+        text-align: center;
+        width: 300px;
+    }
+}
