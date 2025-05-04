@@ -3,41 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="sign-in">
-    <form action="">
-        <h1><i class="fa-solid fa-right-to-bracket"></i></h1>
-        <div class="input-box">
+    <header>
+        <div class="logo">
+            <img src="logo.webp" class="logoicon">
+        </div>
+        <nav class="nav-contain">
+             <input type="checkbox" id="check">
+             <label for="check" class="bar">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         
-            <input type="email" name="Email" id="Email" placeholder="Email Address" required >
-            <i class="fa-solid fa-user"></i>
-        </div>
-        <div class="input-box">
-            <input type="password" name="pass" id="pass" placeholder="Password" required>
-            <i class="fa-solid fa-lock"></i>
-        </div>
-    
-        <div class="remfor">
-            <label><input type="checkbox"> Remember me</label>
-            <a href="#">Forgot password?</a>
-        </div>
+        </nav>
+    </header>
+    <main class="important">
+        <div class="info">
+            <h3>Hi,I'm <span>Abdullah Al Asad.</span></h3>
+            <h1><span>L</span>earning <span>W</span>eb <span>D</span>evelopment</h1>
+            <h3>Based in Chattogram,Bangladesh <br>
+            Passionate about creating responsive and visually apealing websites.</h3>
+            
+                <a href="#" class="button">Hire Me</a>
+            
         
-        <button type="submit" class="button">Login</button>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
 
-        <div class="register">
-            <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
         </div>
+            <div class="image">
+                <img src="im2.webp" class="boy">
+            </div>
         
-    </form>
-    </div>
-    
-        
-        
-    
+    </main>
     
 </body>
 </html>
